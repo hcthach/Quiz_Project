@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Done-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="732dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <!-- TextView thứ tự câu hỏi-->
+        <TextView
+            android:id="@+id/TxtSoCau"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:text="Câu"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            />
+        <!-- ImageView câu hỏi-->
+        <ImageView
+            android:id="@+id/iVCauHoi"
+            android:layout_width="wrap_content"
+            android:layout_height="202dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tree2"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            />
+
+        <!-- Button Câu trả lời A-->
+        <Button
+            android:id="@+id/BtnDapAnA"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/iVCauHoi"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Câu trả lời A"
+            android:textSize="24sp"
+            android:background="@drawable/border_btn"
+            android:clickable="true"
+            android:onClick="onDapAnAClick"/>
+
+        <!-- Button Câu trả lời B-->
+        <Button
+            android:id="@+id/BtnDapAnB"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/BtnDapAnA"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Câu trả lời B"
+            android:textSize="24sp"
+            android:background="@drawable/border_btn"
+            android:clickable="true"
+            android:onClick="onDapAnBClick"/>
+
+        <!-- Button Câu trả lời C-->
+        <Button
+            android:id="@+id/BtnDapAnC"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/BtnDapAnB"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Câu trả lời C"
+            android:textSize="24sp"
+            android:background="@drawable/border_btn"
+            android:clickable="true"
+            android:onClick="onDapAnCClick"/>
+
+        <!-- Button Câu trả lời D-->
+        <Button
+            android:id="@+id/BtnDapAnD"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/BtnDapAnC"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Câu trả lời D"
+            android:textSize="24sp"
+
+            android:background="@drawable/border_btn"
+            android:clickable="true"
+            android:onClick="onDapAnDClick"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

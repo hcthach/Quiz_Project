@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Done-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:minWidth="413dp"
+        android:layout_height="match_parent"
+        android:minHeight="732dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <!-- TextView tiêu đề-->
+        <TextView
+            android:id="@+id/TxtTieuDe"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Thông tin tài khoản"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!-- Edit nhập họ tên-->
+        <EditText
+            android:id="@+id/EditHoTen"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/TxtTieuDe"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_btn"
+            android:paddingStart="6dp"
+            android:hint="Họ và tên" />
+
+        <!-- Edit nhập tên tài khoản-->
+        <EditText
+            android:id="@+id/EditTenTK"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/EditHoTen"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_btn"
+            android:paddingStart="6dp"
+            android:hint="Tên tài khoản" />
+
+        <!-- Edit nhập dia chi Email-->
+        <EditText
+            android:id="@+id/EditEmail"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/EditTenTK"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_btn"
+            android:paddingStart="6dp"
+            android:hint="thach.hc9464@gmail.com" />
+
+        <!-- Edit nhập mật khẩu-->
+        <EditText
+            android:id="@+id/EditMK"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/EditEmail"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_btn"
+            android:paddingStart="6dp"
+            android:hint="Nhập mật khẩu"
+            android:inputType="textWebPassword"/>
+
+        <!-- Edit nhập lại mật khẩu-->
+        <EditText
+            android:id="@+id/EditMK2"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/EditMK"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_btn"
+            android:paddingStart="6dp"
+            android:hint="Nhập mật khẩu"
+            android:inputType="textWebPassword"/>
+
+        <!-- Button Đăng ký-->
+        <Button
+            android:id="@+id/BtnDK"
+            android:layout_width="wrap_content"
+            android:minWidth="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/EditMK2"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/border_btn"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="onDangKyClick"
+            android:text="Đăng Ký"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

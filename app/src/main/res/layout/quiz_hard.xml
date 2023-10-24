@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- Done-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="732dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="1dp"
+        >
+
+        <!-- TextView thứ tự câu hỏi-->
+        <TextView
+            android:id="@+id/TxtSoCau"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:text="Câu"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <!-- ImageView câu hỏi-->
+
+        <ImageView
+            android:id="@+id/iVCauHoi"
+            android:layout_width="wrap_content"
+            android:layout_height="202dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/minion"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <!-- EditText Câu trả lời-->
+        <EditText
+            android:id="@+id/EditDapAn"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border_mode"
+            android:hint="Nhập câu trả lời"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
